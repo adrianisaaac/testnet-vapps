@@ -1,60 +1,76 @@
-# vApp Submission: CrossChain ID Verifier
+# vApp Submission: [identity & reputation]
 
 ## Verification
 ```yaml
-github_username: "example-user"
-discord_id: "123456789012345678"
+github_username: "adrianisaaac"
+discord_id: "isk9512"
 timestamp: "2025-01-15"
 ```
 
 ## Developer
-- **Name**: Example Developer
-- **GitHub**: @example-user
-- **Discord**: example#1234
-- **Experience**: 3 years Web3, identity systems
+- **Name**: adrianisac
+- **GitHub**: @adrianisaaac
+- **Discord**: isk9512
+- **Experience**: Web3 developer with experience in smart contracts, dApp integration, and identity/reputation systems.
 
 ## Project
 
 ### Name & Category
-- **Project**: CrossChain ID Verifier
+- **Project**: Identiq
 - **Category**: identity
 
 ### Description
-Verifies user identity across multiple blockchains using a single credential. Eliminates need to re-establish reputation on each chain.
+SoundnessLabs is a decentralized identity and reputation layer that enables users to own their identity, prove credibility across dApps, and protect privacy with verifiable credentials and zero-knowledge proofs.
+It solves the lack of trust and reputation in Web3 by allowing portable, privacy-preserving reputation across multiple applications.
 
-### SL Integration
-Uses SL as coordination layer to manage cross-chain identity state and verify credentials with privacy preservation.
+### SL Integration  
+- Use Soundness Layer (SL) for authentication, credential verification, and event auditing.
+- SL will act as the settlement & verification backbone for issuing and validating identity proofs.
+- Reputation updates will be recorded and verified through SL modules.
 
 ## Technical
 
 ### Architecture
-SL smart contracts coordinate identity verification across chains. ZK proofs enable privacy-preserving verification.
+User Wallet → SoundnessLabs ID Contract → Settlement Layer (SL) → dApp Authentication & Reputation Check
 
 ### Stack
-- **Frontend**: React + TypeScript
-- **Backend**: Node.js + GraphQL
-- **Blockchain**: SL + Ethereum + Polygon
-- **Storage**: IPFS + PostgreSQL
+- Frontend: React + Next.js (user dashboard & login widget)
+- Backend: Node.js (API & middleware)
+- Blockchain: SL + EVM-compatible chains
+- Storage: IPFS/Ceramic for credential metadata, on-chain hashes for verification
 
 ### Features
-1. Unified identity across chains
-2. Privacy-preserving verification
-3. Developer API for integration
+1. Decentralized Identity (DID) → self-sovereign identity controlled by the user.
+2. Verifiable Credentials → portable, tamper-proof reputation proofs.
+3. Reputation Scoring → dynamic reputation score based on user’s activities.
+4. Privacy-Preserving Proofs → ZKPs to prove reputation without exposing all data.
+5. “Sign in with SoundnessLabs” widget → easy dApp integration.
 
 ## Timeline
 
-### PoC (3 weeks)
-- [x] SL identity contract
-- [x] Basic frontend
-- [ ] Cross-chain verification
+### PoC (2-4 weeks)
+- [ ] Basic DID smart contract
+- [ ] SL integration for credential verification
+- [ ] Simple UI for identity creation
 
-### MVP (6 weeks)
-- [ ] Full verification system
-- [ ] API for developers
-- [ ] Mobile support
+### MVP (4-8 weeks)  
+- [ ] Full verifiable credential issuance & verification
+- [ ] Reputation scoring system
+- [ ] User dashboard & dApp login widget
+- [ ] Beta release on testnet
 
 ## Innovation
-First identity system using SL for true cross-chain coordination with privacy preservation.
+- Unlike standard wallet login, SoundnessLabs provides trust & reputation portability across dApps.
+- Integrates zero-knowledge proofs for privacy-preserving verification.
+- Bridges the gap between identity, reputation, and usability in Web3.
 
 ## Contact
-Discord preferred. Updates posted in community channels.
+Preferred: Discord (isk9512)
+Updates will also be shared via GitHub repo & Discord community.
+
+
+**Checklist before submitting:**
+- [ ] All fields completed
+- [ ] GitHub username matches PR author  
+- [ ] SL integration explained
+- [ ] Timeline is realistic
