@@ -1,63 +1,72 @@
-# vApp Submission: [Your Project Name]
+# vApp Submission: [identity & reputation]
 
 ## Verification
 ```yaml
-github_username: "your-username"
-discord_id: "123456789012345678"
+github_username: "adrianisaaac"
+discord_id: "isk9512"
 timestamp: "2025-01-15"
 ```
 
 ## Developer
-- **Name**: Your Name
-- **GitHub**: @your-username
-- **Discord**: username#1234
-- **Experience**: Brief background
+- **Name**: adrianisac
+- **GitHub**: @adrianisaaac
+- **Discord**: isk9512
+- **Experience**: Web3 developer with experience in smart contracts, dApp integration, and identity/reputation systems.
 
 ## Project
 
 ### Name & Category
-- **Project**: Your vApp Name
-- **Category**: identity/defi/social/gaming/infrastructure/other
+- **Project**: Identiq
+- **Category**: identity
 
 ### Description
-What problem does your vApp solve? What does it do?
+SoundnessLabs is a decentralized identity and reputation layer that enables users to own their identity, prove credibility across dApps, and protect privacy with verifiable credentials and zero-knowledge proofs.
+It solves the lack of trust and reputation in Web3 by allowing portable, privacy-preserving reputation across multiple applications.
 
 ### SL Integration  
-How will you use Soundness Layer? What specific SL features?
+- Use Soundness Layer (SL) for authentication, credential verification, and event auditing.
+- SL will act as the settlement & verification backbone for issuing and validating identity proofs.
+- Reputation updates will be recorded and verified through SL modules.
 
 ## Technical
 
 ### Architecture
-High-level system design and approach
+User Wallet → SoundnessLabs ID Contract → Settlement Layer (SL) → dApp Authentication & Reputation Check
 
 ### Stack
-- **Frontend**: React/Vue/etc
-- **Backend**: Rust/Node.js/Python/etc  
-- **Blockchain**: SL + others
-- **Storage**: Database/WALRUS/IPFS/etc
+- Frontend: React + Next.js (user dashboard & login widget)
+- Backend: Node.js (API & middleware)
+- Blockchain: SL + EVM-compatible chains
+- Storage: IPFS/Ceramic for credential metadata, on-chain hashes for verification
 
 ### Features
-1. Core feature 1
-2. Core feature 2  
-3. Core feature 3
+1. Decentralized Identity (DID) → self-sovereign identity controlled by the user.
+2. Verifiable Credentials → portable, tamper-proof reputation proofs.
+3. Reputation Scoring → dynamic reputation score based on user’s activities.
+4. Privacy-Preserving Proofs → ZKPs to prove reputation without exposing all data.
+5. “Sign in with SoundnessLabs” widget → easy dApp integration.
 
 ## Timeline
 
 ### PoC (2-4 weeks)
-- [ ] Basic functionality
-- [ ] SL integration
-- [ ] Simple UI
+- [ ] Basic DID smart contract
+- [ ] SL integration for credential verification
+- [ ] Simple UI for identity creation
 
 ### MVP (4-8 weeks)  
-- [ ] Full features
-- [ ] Production ready
-- [ ] User testing
+- [ ] Full verifiable credential issuance & verification
+- [ ] Reputation scoring system
+- [ ] User dashboard & dApp login widget
+- [ ] Beta release on testnet
 
 ## Innovation
-What makes this unique? Why will people use it?
+- Unlike standard wallet login, SoundnessLabs provides trust & reputation portability across dApps.
+- Integrates zero-knowledge proofs for privacy-preserving verification.
+- Bridges the gap between identity, reputation, and usability in Web3.
 
 ## Contact
-Preferred contact method and where you'll share updates.
+Preferred: Discord (isk9512)
+Updates will also be shared via GitHub repo & Discord community.
 
 
 **Checklist before submitting:**
